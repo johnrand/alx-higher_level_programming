@@ -2,7 +2,6 @@
 import random
 number = random.randint(-10, 10)
 
-#decisions using if statements
 if number < 0:
     print(f"{number} is negative")
 elif number == 0:

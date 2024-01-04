@@ -1,5 +1,5 @@
 #!/usr/bin/python3
 
-#print the alphabet in lowercase
+# print alphabet lowercase
 
-print("".join(chr(i) for i in range(ord('a'), ord('z') + 1)), end="")
+print("{}".format("".join(chr(ord('a') + j) for j in range(26))), end="")
