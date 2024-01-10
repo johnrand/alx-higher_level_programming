@@ -1,3 +1,3 @@
 #!/usr/bin/python3
 import string
-print(*list(getattr(string, 'ascii_uppercase')), sep='', end='\n', flush=True)
+print(''.join(getattr(string, 'ascii_uppercase')), + '\n')
