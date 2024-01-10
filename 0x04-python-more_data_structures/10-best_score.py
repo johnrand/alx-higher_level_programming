@@ -10,7 +10,7 @@
 
 
 def best_score(a_dictionary):
-    if not in a_dictionary:
+    if not a_dictionary:
         return None
 
     biggest_int = max(a_dictionary, key=a_dictionary.get)
