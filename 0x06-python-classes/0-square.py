@@ -1,34 +1,28 @@
 class Square:
-    """
-    This is the Square class.
+    """This is the Square class.
 
     It represents a square and is currently empty, serving as a placeholder.
     """
 
     def __init__(self):
-        """
-        The constructor for the Square class.
+        """The constructor for the Square class.
 
         Currently, it initializes an empty square object.
         """
         pass
 
     def square_fnctn(self):
-        """
-        Example method inside the Square class.
+        """Example method inside the Square class.
 
         This method does nothing.
         """
-        pass
-
+        
 
 def square_fnctn():
-    """
-    Example function outside the Square class.
+    """Example function outside the Square class.
 
     This function does nothing.
     """
-    pass
 
 
 # Print documentation for the module
