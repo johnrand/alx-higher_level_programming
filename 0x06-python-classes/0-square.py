@@ -18,6 +18,17 @@ class Square:
 
         This method does nothing.
         """
+        pass
+
+    @property
+    def dict_(self):
+        """Getter method for obtaining a dictionary representation
+        of the square
+
+        Returns:
+            dict: A dict containing info about the suare
+        """
+        return {}
 
 
 def square_fnctn():
@@ -25,6 +36,7 @@ def square_fnctn():
 
     This function does nothing.
     """
+    pass
 
 
 # Print documentation for the module
