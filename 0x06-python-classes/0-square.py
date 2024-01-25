@@ -28,13 +28,13 @@ def square_fnctn():
 
 
 # Print documentation for the module
-print(__import__("__main__").__doc__)
+print(__doc__)
 
 # Print documentation for the Square class
-print(__import__("__main__").Square.__doc__)
+print(Square.__doc__)
 
 # Print documentation outside the class
-print(__import__("__main__").square_fnctn.__doc__)
+print(square_fnctn.__doc__)
 
 # Print documentation inside the Square class
-print(__import__("__main__").Square.square_fnctn.__doc__)
+print(Square.square_fnctn.__doc__)
