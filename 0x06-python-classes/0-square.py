@@ -1,3 +1,5 @@
+#!/usr/bin/python3
+
 class Square:
     """This is the Square class.
 
@@ -16,7 +18,7 @@ class Square:
 
         This method does nothing.
         """
-        
+
 
 def square_fnctn():
     """Example function outside the Square class.
