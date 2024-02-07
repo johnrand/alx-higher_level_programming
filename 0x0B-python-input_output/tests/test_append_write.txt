@@ -1,0 +1,28 @@
+def test_append_write():
+    """
+    Unit test for append_write function.
+    """
+    # Test appending to a file
+    filename = "test_append_write.txt"
+    # Create the file with some initial content
+    with open(filename, 'w', encoding='utf-8') as file:
+        file.write("Initial content of the file.\n")
+
+    text_to_append = "This is a string to append."
+    num_chars_added = append_write(filename, text_to_append)
+    print(f"Number of characters added: {num_chars_added}")
+
+    # Check the content of the file
+    with open(filename, 'r', encoding='utf-8') as file:
+        file_content = file.read()
+        print("Content of the file after appending:")
+        print(file_content)
+
+    # Clean up: Remove the test file
+    import os
+    os.remove(filename)
+
+
+# Run the unit test if the module is executed directly
+if __name__ == "__main__":
+    test_append_write()
