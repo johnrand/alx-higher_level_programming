@@ -1,0 +1,15 @@
+# Test the function
+
+if __name__ == "__main__":
+    # Test loading from a JSON file representing a dictionary
+
+    loaded_dict = load_from_json_file("test_dict.json")
+    print("Loaded dictionary:", loaded_dict)
+
+    # Test loading from a JSON file representing a list
+    loaded_list = load_from_json_file("test_list.json")
+    print("Loaded list:", loaded_list)
+
+    # Test loading from a JSON file representing a string
+    loaded_string = load_from_json_file("test_string.json")
+    print("Loaded string:", loaded_string)
