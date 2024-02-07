@@ -1,0 +1,20 @@
+
+# Test the function
+
+if __name__ == "__main__":
+
+    # Test with a JSON string representing a dictionary
+
+    json_string_dict = '{"name": "John", "age": 23, "city": "Busia"}'
+    my_dict = from_json_string(json_string_dict)
+    print(my_dict)
+
+    # Test with a JSON string representing a list
+    json_string_list = '[1, 2, 3, 4, 5]'
+    my_list = from_json_string(json_string_list)
+    print(my_list)
+
+    # Test with a JSON string representing a string
+    json_string_str = '"Hello, John!"'
+    my_string = from_json_string(json_string_str)
+    print(my_string)
