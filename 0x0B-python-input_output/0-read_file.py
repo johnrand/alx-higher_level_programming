@@ -1,5 +1,9 @@
 #!/usr/bin/python3
 
+"""
+0-read_file.py - A module for reading text files and printing their content to stdout.
+"""
+
 def read_file(filename=""):
     """
     Reads a text file (UTF8) and prints its content to stdout.
