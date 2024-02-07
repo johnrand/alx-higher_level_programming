@@ -1,0 +1,23 @@
+def test_read_file():
+    """Unit test for read_file function."""
+    # Prepare a sample text file
+    sample_text = "Hello, this is a sample text file.\nIt contains multiple lines.\nEnd of file."
+    with open("sample.txt", "w", encoding="utf-8") as file:
+        file.write(sample_text)
+
+    # Test reading the file
+    print("Reading sample file:")
+    read_file("sample.txt")
+
+    # Test reading with no filename provided
+    print("\nReading with no filename provided:")
+    read_file()
+
+    # Clean up: Remove the sample text file
+    import os
+    os.remove("sample.txt")
+
+
+# Run the unit test
+if __name__ == "__main__":
+    test_read_file()
