@@ -19,24 +19,7 @@ class Rectangle(Base):
         y: y-coordinate of the rectangle's position.
     """
 
-    def __init__(self, width, height, x=0, y=0, id=None):
-        """
-        Initializes a Rectangle instance.
-
-        Args:
-            width (int): The width of the rectangle.
-            height (int): The height of the rectangle.
-            x: x-coordinate of the rectangle's position.
-            y: y-coordinate of the rectangle's position.
-            id: The identifier for the object.
-        """
-        super().__init__(id)
-        self.width = width
-        self.height = height
-        self.x = x
-        self.y = y
-
-        @property
+    @property
         def width(self):
             """
             Getter method for the width attribute.
@@ -103,3 +86,21 @@ class Rectangle(Base):
                 value: value to set for the y-coordinate.
             """
             self.__y = value
+
+
+    def __init__(self, width, height, x=0, y=0, id=None):
+        """
+        Initializes a Rectangle instance.
+
+        Args:
+            width (int): The width of the rectangle.
+            height (int): The height of the rectangle.
+            x: x-coordinate of the rectangle's position.
+            y: y-coordinate of the rectangle's position.
+            id: The identifier for the object.
+        """
+        super().__init__(id)
+        self.width = width
+        self.height = height
+        self.x = x
+        self.y = y
