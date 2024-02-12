@@ -1,0 +1,30 @@
+# Unit test
+import unittest
+
+
+class TestBase(unittest.TestCase):
+    """
+    Unit tests for the Base class.
+    """
+
+    def test_id_assigned_with_id_argument(self):
+        """
+        Test case to verify id assignment with provided id argument.
+        """
+        obj = Base(10)
+        self.assertEqual(obj.id, 10)
+
+    def test_id_assigned_incrementally(self):
+        """
+        Test case to verify id assignment with incremental values.
+        """
+        obj1 = Base()
+        obj2 = Base()
+        obj3 = Base()
+        self.assertEqual(obj1.id, 1)
+        self.assertEqual(obj2.id, 2)
+        self.assertEqual(obj3.id, 3)
+
+
+if __name__ == '__main__':
+    unittest.main()
