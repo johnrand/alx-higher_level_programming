@@ -1,7 +1,7 @@
 # test_rectangle.py
 
 import unittest
-from models.rectangle import Rectangle
+from rectangle import Rectangle
 
 
 class TestRectangle(unittest.TestCase):
