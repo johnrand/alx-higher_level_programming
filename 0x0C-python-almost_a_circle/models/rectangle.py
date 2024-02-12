@@ -5,7 +5,7 @@ This module creates a class reactangle that inherits from the base class.
 
 """
 
-from models.base import Base
+from base import Base
 
 
 class Rectangle(Base):
@@ -19,7 +19,7 @@ class Rectangle(Base):
         y: y-coordinate of the rectangle's position.
     """
 
-    def __init__(self, width, height, x, y, id=None):
+    def __init__(self, width, height, x=0, y=0, id=None):
         """
         Initializes a Rectangle instance.
 
