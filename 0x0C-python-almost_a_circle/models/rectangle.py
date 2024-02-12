@@ -5,7 +5,7 @@ This module creates a class reactangle that inherits from the base class.
 
 """
 
-from base import Base
+from models.base import Base
 
 
 class Rectangle(Base):
