@@ -19,7 +19,7 @@ class Rectangle(Base):
         y: y-coordinate of the rectangle's position.
     """
 
-    def __init__(self, width, height, x=0, y=0, id=None):
+    def __init__(self, width, height, x, y, id=None):
         """
         Initializes a Rectangle instance.
 
