@@ -32,7 +32,9 @@ class Square:
             Vallu: value returned
 
             """
-            if not isinstance(value, int):
+            try:
+                value = int(value)
+            except ValueError:
                 raise TypeError("size must be an integer")
             if value < 0:
                 raise ValueError("size must be >= 0")
@@ -44,4 +46,4 @@ class Square:
             Return the area of the square
 
             """
-            return self.__size ** 2
+            return self.size ** 2
