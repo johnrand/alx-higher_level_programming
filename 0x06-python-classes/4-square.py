@@ -23,6 +23,8 @@ class Square:
             Getter to return the size
 
             """
+            if not isinstance(self.value, int):
+                raise TypeError("size must be an integer")
             return self.__size
 
         @size.setter
