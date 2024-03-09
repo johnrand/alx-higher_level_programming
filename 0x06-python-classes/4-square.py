@@ -15,7 +15,7 @@ class Square:
         size: private instance must be integer
     """
     def __init__(self, size=0):
-        self.size = size
+        self.__size = size
 
         @property
         def size(self):
@@ -44,4 +44,4 @@ class Square:
             Return the area of the square
 
             """
-            return (self.size * self.size)
+            return (self.__size ** 2)
