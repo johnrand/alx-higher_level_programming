@@ -61,7 +61,7 @@ class Square:
             raise TypeError("size must be an integer")
 
         return (self.__size ** 2)
-    
+
     def my_print(self):
         """
         Prints the square with the character # to stdout
